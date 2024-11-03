@@ -9220,7 +9220,7 @@ h1, h2, h3, h4, h5,
       .blog-entry .meta > div a:hover {
         color: #cccccc; }
   .blog-entry:hover:after {
-    background: #e52b34;
+    background: green;
     height: 15px;
     bottom: -7px; }
 

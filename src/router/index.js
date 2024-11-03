@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
+import ourphilosophy from '../views/Ourphilosophy.vue'
 import Contact from '../views/Contact.vue'
 import Menu from '@/views/Menu.vue'
 import Chef from '@/views/Chef.vue'
 import Reservation from '@/views/Reservation.vue'
-import Blog from '@/views/Blog.vue'
-
+import Message from '@/views/Message.vue'
+import News from '@/views/News.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -16,9 +16,14 @@ const router = createRouter({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component:About,
+      path: '/news',
+      name: 'News',
+      component: News
+    },
+    {
+      path: '/Ourphilosophy',
+      name: 'Ourphil',
+      component:ourphilosophy
     },
     {
       path: '/contact',
@@ -41,9 +46,9 @@ const router = createRouter({
       component:Reservation,
     },
     {
-      path: '/blog',
-      name: 'Blog',
-      component:Blog,
+      path: '/message',
+      name: 'Message',
+      component:Message,
     },
   ]
 })

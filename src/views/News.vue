@@ -1,0 +1,20 @@
+<template>
+    <div>
+      <h1>TUM Hosts a Public Lecture on Religion, Politics, and Human Rights</h1>
+      <p>On 31st October, Professor Erin Wilson from the University of Groningen, Netherlands, visited TUM, where she delivered a public lecture alongside representatives from both universities on the theme of “Religion, Politics, and Human Rights in the Contemporary World.” During this event, Prof. Erin Wilson, a Professor of Politics and Religion, presented on “Critical Approaches to Religion and World Politics.” At the same time, Dr. Manoela Carpenedo, Assistant Professor, conducted a virtual presentation on “Persecuted Beliefs: Afro-Diasporic Religions and the Right to Freedom of Religion or Belief (FoRB) in Latin America.” From TUM, Dr. Fathima Azmiya Badurdeen, a Postdoctoral Researcher, discussed “The Right to FoRB in Preventing Religious Intolerance in Communities: Kenya and Indonesia.” Dr. Godffrey Nato, Dean of Humanities and Social Sciences at the Technical University of Mombasa, moderated the engaging session. Faculty heads, lecturers, and students, particularly those majoring in Conflict and Security Studies, were in attendance. Some of the topics addressed during the session included secularism, international security, Freedom of Religion or Belief (FoRB), colonialism, politics, culture, religious intolerance and persecution, countering violent extremism, gender, and peace-building. Dr. Fathima also highlighted the JISRA (Joint Initiative for Strategic Religious Actions) research project, which aims to co-create strategies to advance the Right to Freedom of Religion or Belief (FoRB). The diverse perspectives shared by the speakers emphasized the significance of understanding and promoting the Right to Freedom of Religion or Belief (FoRB) as a crucial element in fostering peaceful coexistence and mitigating religious intolerance. By engaging in such critical dialogues, academic institutions can play a pivotal role in shaping policies and strategies that uphold human rights and contribute to a more inclusive society. The collaborative nature of the presentations and discussions reflected the commitment of both universities to advance knowledge and advocacy in this vital area.</p>
+  
+      <h1>AWS Pwani User Group Hosts an Event on Next Generation Developer Experience at TUM</h1>
+      <p>Earlier this morning, the Amazon Web Services (AWS) Pwani User Group, a community focused on cloud computing and AWS technologies, hosted an event titled "Build Without Limits: The Next Generation Developer Experience." This event was organized in collaboration with the TUM Institute of Computing and Informatics (ICI) and the Partnerships, Research, and Innovation (PRI) Office. Ms Veliswa Boya, a senior developer advocate from South Africa at AWS, facilitated the session. The discussion centered around cloud computing, AWS innovations, courses and services, and their real-world applications. Topics included generative AI, machine learning, foundation models, content creation, AI ethics, and the emerging risks and concerns associated with generative AI. The students also learned about the rapid advancements in AI technology, the significant potential impact of AI on economic growth, the promising career paths available in the ever-evolving tech landscape, and how to prepare for a generative AI future. This event not only provided invaluable learning opportunities but also fostered networking with industry professionals, enhancing students' connections in the field. As a non-profit organization, AWS proudly offered this enriching session free of charge, demonstrating its commitment to supporting and educating the technology community. For more information on AWS services and opportunities, check out their website: https://aws.amazon.com/</p>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'News'
+  };
+  </script>
+  
+  <style>
+  /* Add any specific styles for this page */
+  </style>
+  

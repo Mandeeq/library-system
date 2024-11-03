@@ -4,7 +4,9 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 //importing icons 
+import '@fortawesome/fontawesome-free/css/all.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
+
 
 // Import specific icons from the brands package
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -28,6 +30,8 @@ import 'bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css';
 import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Includes Popper.js
 
+
+
 import '@/assets/css/animate.css';
 import '@/assets/css/flaticon.css';
 import '@/assets/css/jquery.timepicker.css';
@@ -36,6 +40,7 @@ import '@/assets/css/owl.carousel.min.css';
 import '@/assets/css/owl.theme.default.min.css';
 import '@/assets/css/style.css';
 
+  
 const app = createApp(App)
 app.use(VueLazyload);
 
