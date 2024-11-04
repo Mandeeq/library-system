@@ -240,12 +240,12 @@
   
 </div>
 </div>
-<div class="container-fluid px-0 py-3" style="background-color: orange;">
+<div class="container-fluid px-0 py-3" style="background-color: #D79837;">
  <div class="row no-gutters">
   <div class="col-md-12 text-center">
 
     <p class="mb-0 "><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy  2024 Technical University of Mombasa. All Rights Reserved. | Designed by TUM, ICTS <i class="fa fa-heart " aria-hidden="true"></i>  <a href="http://www.tum.ac.ke/" target="_blank"></a>
+      Copyright &copy  2024 Technical University of Mombasa. All Rights Reserved. | Designed by IMAN <i class="fa fa-heart " aria-hidden="true"></i>  <a href="http://www.tum.ac.ke/" target="_blank"></a>
       <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
     </div>
   </div>

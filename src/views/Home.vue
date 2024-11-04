@@ -2,9 +2,6 @@
 import { RouterLink } from 'vue-router';
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
-import Menu from './Menu.vue';
-import info from '@/components/info.vue';
-
 import ReadMore from "@/components/ReadMore.vue";
 import Events from '@/components/Events.vue';
 
@@ -14,30 +11,6 @@ import Events from '@/components/Events.vue';
 </script>
 
 <template>
-
-    <div class="wrapi">
-        
-        <div class="container">
-            <div class="row justify-content-end">
-  <div class="col-12 col-md d-flex align-items-end">
-    <p class="mb-0 phone">
-      <i class="fas fa-phone-alt" style="color: green;"></i> <span class="mailus">Phone no:</span> 
-      <a href="#" style="color: black;">+254733955377</a> 
-      or <i class="fas fa-envelope" style="color: green;"></i> <span class="mailus">email us:</span> 
-      <a href="#" style="color: black;">info@tum.ac.ke</a>
-    </p>
-    <p class="mb-0 phone">
-      <i class="fas fa-map-marker-alt" style="color: green;"></i> <span class="mailus">Physical address:</span> 
-      <a href="#" style="color: black;">Tom Mboya Street, Tudor, Msa</a>
-    </p>
-  </div>
-</div>
-
-
-        </div>
-    </div>
-
-
     <Navbar />
 
     <section class="hero-wrap">
@@ -45,7 +18,7 @@ import Events from '@/components/Events.vue';
 
 
         <div class="home-slider owl-carousel js-fullheight ">
-            <div class="slider-item js-fullheight " style="background-image:url(/images/tum1.jpeg);">
+            <div class="slider-item js-fullheight " style="background-image:url(/images/tum.jpg);">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -166,66 +139,59 @@ import Events from '@/components/Events.vue';
 
 
     <section class="ftco-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading">Blog</span>
-                    <h2 class="mb-4">Recent Blog</h2>
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">Blog</span>
+                <h2 class="mb-4">Recent Blog</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-entry" style="width: 100%;"> <!-- Ensure blog entry uses 100% width -->
+                    <Events />
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 ">
-                    <div class="blog-entry">
-                        <Events />
-                    
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="blog-entry">
-                       <h1>NOTICE BOARD</h1>
-                       <div class="text px-4 pt-3 pb-4">
+            <div class="col-md-4">
+                <div class="blog-entry" style="width: 100%;">
+                    <h1>NOTICE BOARD</h1>
+                    <div class="text px-0 pt-3 pb-4"> <!-- Adjusted padding -->
                         <div class="heading">
                             <template>
-  <div>
-    <ReadMore 
-  title="GRADUATION AWARD LIST FOR THE 11TH GRADUATION CEREMONY SCHEDULED DECEMBER 2024"
-  :intro="'Click below to download the PDF of the award list.'"
-  :fullText4="'/library/public/documents/1- TUM GRADUATION AWARD LIST FOR THE 11TH GRADUATION CEREMONY SCHEDULED DECEMBER 2024 -22102024.pdf'" 
-  :charLimit="250" 
-  class="small-text" 
-/>
-
-
-
-  </div>
-</template>
-
-    <ReadMore title="Advertisement for Internship Program - Finance" :fullText="fullText1" :charLimit="250" class="small-text" />
-    <ReadMore title="Advertisement for Internship Program - Procurement" :fullText="fullText1" :charLimit="250" class="small-text" />
-    <ReadMore title="Procedures For Online Room Booking" :fullText="fullText1" :charLimit="250" class="small-text" />
-    <ReadMore title="INSURANCE LETTERS MAY AUGUST 2024 BATCH 4" :fullText="fullText1" :charLimit="250" class="small-text" />
-    </div>
-</div>
-
+                                <div>
+                                    <ReadMore 
+                                        title="GRADUATION AWARD LIST FOR THE 11TH GRADUATION CEREMONY SCHEDULED DECEMBER 2024"
+                                        :intro="'Click below to download the PDF of the award list.'"
+                                        :fullText4="'/library/public/documents/1- TUM GRADUATION AWARD LIST FOR THE 11TH GRADUATION CEREMONY SCHEDULED DECEMBER 2024 -22102024.pdf'" 
+                                        :charLimit="250" 
+                                        class="small-text" 
+                                    />
+                                </div>
+                            </template>
+                            <ReadMore title="Advertisement for Internship Program - Finance" :fullText="fullText1" :charLimit="250" class="small-text" />
+                            <ReadMore title="Advertisement for Internship Program - Procurement" :fullText="fullText1" :charLimit="250" class="small-text" />
+                            <ReadMore title="Procedures For Online Room Booking" :fullText="fullText1" :charLimit="250" class="small-text" />
+                            <ReadMore title="INSURANCE LETTERS MAY AUGUST 2024 BATCH 4" :fullText="fullText1" :charLimit="250" class="small-text" />
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-    <div class="blog-entry">
-        <h1>FEATURED</h1>
-        <div class="text px-4 pt-3 pb-4">
-            <div class="img" style="background-image: url(/images/tum23.jpg); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
-            <div class="meta">
-               
             </div>
-            <h3 class="heading"><a href="#">TUM Soars Above Expectations in ISO 9001:2015 Second Surveillance Audit!</a></h3>
-           
+            <div class="col-md-4">
+                <div class="blog-entry" style="width: 100%;">
+                    <h1>FEATURED</h1>
+                    <div class="text px-0 pt-3 pb-4"> <!-- Adjusted padding -->
+                        <div class="img" style="background-image: url(/images/tum23.jpg); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
+                        <div class="meta">
+                            <!-- Optional meta information can be added here -->
+                        </div>
+                        <h3 class="heading"><a href="#">TUM Soars Above Expectations in ISO 9001:2015 Second Surveillance Audit!</a></h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
-            </div>
-        </div>
-    </section>
 
     <Footer />
 

@@ -4,25 +4,33 @@
 
 
 <div class="wrapi">
-        
-        <div class="container">
-            <div class="row justify-content-end">
-  <div class="col-12 col-md d-flex align-items-end">
-    <p class="mb-0 phone">
-      <i class="fas fa-phone-alt" style="color: green;"></i> <span class="mailus">Phone no:</span> 
-      <a href="#" style="color: black;">+254733955377</a> 
-      or <i class="fas fa-envelope" style="color: green;"></i> <span class="mailus">email us:</span> 
-      <a href="#" style="color: black;">info@tum.ac.ke</a>
-    </p>
-    <p class="mb-0 phone">
-      <i class="fas fa-map-marker-alt" style="color: green;"></i> <span class="mailus">Physical address:</span> 
-      <a href="#" style="color: black;">Tom Mboya Street, Tudor, Msa</a>
-    </p>
-  </div>
-</div>
-
-
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-12 col-md d-flex align-items-center">
+                <div class="contact-info me-4"> <!-- Added margin-end for spacing -->
+                    <i class="fas fa-phone-alt" style="color: green;"></i>
+                    <span class="mailus" style="color: black;" >Phone no:</span>
+                    <a href="#" style="color: white;">+254733955377</a>
+                </div>
+                    <div class="contact-info me-4"> 
+                    <i class="fas fa-envelope" style="color: green;"></i>
+                    <span class="mailus" style="color: black;">email us:</span>
+                    <a href="#" style="color: white;">info@tum.ac.ke</a>
+                    
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt" style="color: green;"></i>
+                    <span class="mailus" style="color: black;">Physical address:</span>
+                    <a href="#" style="color: white;">Tom Mboya Street, Tudor, Msa</a>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 <Navbar />
 </template>
+<style scoped>
+.wrapi{
+    background-color: #D79837 !important;
+}
+</style>
