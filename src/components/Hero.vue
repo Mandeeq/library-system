@@ -42,8 +42,8 @@
           alt="Sunset Over the City"
         />
         <div class="carousel-caption d-none d-md-block custom-carousel-caption">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Empowering Future Innovators</h5>
+          <p>Technical University of Mombasa: Where Knowledge Meets Innovation.</p>
         </div>
       </div>
 
@@ -55,8 +55,8 @@
           alt="Canyon at Night"
         />
         <div class="carousel-caption d-none d-md-block custom-carousel-caption">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Building Tomorrow's Leaders Today</h5>
+          <p>Committed to Academic Excellence and Professional Development</p>
         </div>
       </div>
 
@@ -68,8 +68,8 @@
           alt="Cliff Above a Stormy Sea"
         />
         <div class="carousel-caption d-none d-md-block custom-carousel-caption">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h5>Your Journey to Excellence Begins Here</h5>
+          <p>Fostering Skills and Competencies for a Dynamic World</p>
         </div>
       </div>
     </div>
@@ -108,5 +108,28 @@
 /* Custom styles for the caption text */
 .custom-carousel-caption {
   color: white !important; /* Sets the text color to white */
+
 }
+.carousel-caption.custom-carousel-caption h5,
+.carousel-caption.custom-carousel-caption p {
+  color: white !important; /* Ensure both h5 and p are targeted */
+}
+.custom-carousel-caption {
+  position: absolute; /* Positioning the caption absolutely */
+  top: 50%; /* Move the caption to the center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center both horizontally and vertically */
+  color: white !important; /* Set the text color to white */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  padding: 10px; /* Add padding for better readability */
+  text-align: center; /* Center text */
+  font-size: large;
+}
+.custom-carousel-caption p{
+  font-size: 32px;
+}
+.custom-carousel-caption h5{
+  font-size: 42px;
+}
+
 </style>

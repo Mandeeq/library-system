@@ -6,7 +6,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D99837;">
     <!-- Logo on the left -->
     <a class="navbar-brand" href="#">
-        <img src="/img/logot.png" width="50" height="50" alt="">
+        <img src="/img/logot.png" width="90" height="60" alt="">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
