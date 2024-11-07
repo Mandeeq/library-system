@@ -13,57 +13,77 @@ import Hero from '@/components/Hero.vue';
 <template>
     <Navbar />
     <Hero />
-    <section class="ftco-section bg-light full-width">
-    <div class="row justify-content-center mb-5 pb-2">
-        <div class="col-md-7 text-center heading-section">
-            <h2 class="mb-4">E-BOOKS</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-lg-3">
-            <div class="staff">
-                <div class="img" style="background-image: url(/images/bookboon.jpg);"></div>
-                <div class="text px-4 pt-2">
-                    <a href="http://bookboon.com/">bookboon E-Books</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="staff">
-                <div class="img" style="background-image: url(/images/scholarText.jpg);"></div>
-                <div class="text px-4 pt-2">
-                    <a href="http://www.scholartext.com/">scholarTEXT</a>
-                </div> </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="staff">
-                <div class="img" style="background-image: url(/images/Britanicca.jpg);"></div>
-                <div class="text px-4 pt-2">
-                    <a href="https://tum.remotexs.co/user">Encyclopedia Britannica</a>
-                </div> </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="staff">
-                <div class="img" style="background-image: url(/images/Ebrary.jpg);"></div>
-                <div class="text px-4 pt-2">
-                    <a href="https://tum.remotexs.co/user">EBRARY</a>
-                </div> </div>
-        </div>
-    </div>
-</section>
-<section class="ftco-section bg-light full-width-section">
+    <section class="ftco-section bg-light full-width-section move-up">
     <div class="container-fluid">
-        <div class="row justify-content-center mb-5 pb-2">
+        <div class="row justify-content-center">
             <div class="col-md-7 text-center heading-section">
-                <h2 class="mb-4">Latest News & Events</h2>
+                <h2 class="news">E-BOOKS</h2>
             </div>
         </div>
         <div class="row justify-content-center"> <!-- Center all items in the row -->
             <div class="col-md-6 col-lg-3 d-flex justify-content-center">
                 <div class="staff text-center">
-                    <div class="img" style="background-image: url(/images/tum12.jpg);"></div>
+                    <div class="img" style="background-image: url(/images/bookboon.jpg); width: 90%;"></div>
                     <div class="text px-4 pt-2">
-                        <ReadMore title="TUM Hosts a Public Lecture on Religion, Politics, and Human Rights"
+                        <a href="http://bookboon.com/" target="_blank">
+                            Bookboon offers a vast selection of free and premium eBooks
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="staff text-center">
+                    <div class="img" style="background-image: url(/images/Ebrary.jpg); width: 90%;"></div>
+                    <div class="text px-4 pt-2">
+                        <a href="https://tum.remotexs.co/user" target="_blank">
+                          Ebrary library provides access to thousands of academic eBooks
+                        </a>
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="staff text-center">
+                    <div class="img" style="background-image: url(/images/Britanicca.jpg); width: 90%;"></div>
+                    <div class="text px-4 pt-2">
+                        <a href="https://tum.remotexs.co/user" target="_blank">
+                            University of Mombasa Library Hosts Reading for Success Campaign
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="staff text-center">
+                    <div class="img" style="background-image: url(/images/scholarText.jpg); width: 90%;"></div>
+                    <div class="text px-4 pt-2">
+                        <a href="https://example.com/resource4" target="_blank">
+                            Search for Common Ground signs MOU with TUM for promoting peace in digital space
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="ftco-section bg-light full-width-section move-up">
+    <div class="container-fluid">
+        <div class="row justify-content-center ">
+            <div class="col-md-7 text-center heading-section ">
+                <h2 class="news mt-50">Latest News</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- Center all items in the row -->
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="staff text-center">
+                    <div class="img" style="background-image: url(/images/lib4.jpg);"></div>
+                    <div class="text px-4 pt-2">
+                        <ReadMore title="University of Mombasa Digital Library Expands Access to Global Resources"
                             :fullText="'On 31st October, Professor Erin Wilson from the University of Groningen, Netherlands, visited TUM, where she delivered a public lecture alongside representatives from both universities on the theme of “Religion, Politics, and Human Rights in the Contemporary World.” ...'" 
                             :charLimit="250" />
                     </div>
@@ -71,9 +91,9 @@ import Hero from '@/components/Hero.vue';
             </div>
             <div class="col-md-6 col-lg-3 d-flex justify-content-center">
                 <div class="staff text-center">
-                    <div class="img" style="background-image: url(/images/tum11.jpg);"></div>
+                    <div class="img" style="background-image: url(/images/lib3.jpg);"></div>
                     <div class="text px-4 pt-2">
-                        <ReadMore title="AWS Pwani User Group Hosts an Event on Next Generation Developer Experience at TUM"
+                        <ReadMore title="Upcoming Workshops on Using E-Resources"
                             :fullText="fullText" 
                             :charLimit="250" />
                     </div>
@@ -83,8 +103,8 @@ import Hero from '@/components/Hero.vue';
                 <div class="staff text-center">
                     <div class="img" style="background-image: url(/images/tum13.jpg);"></div>
                     <div class="text px-4 pt-2">
-                        <ReadMore title="TUM hosts spectacular 2024 Cultural Week for Students"
-                            :fullText="fullText1" 
+                        <ReadMore title="University of Mombasa Library Hosts Reading for Success Campaign":fullText="fullText1" 
+                            
                             :charLimit="250" />
                     </div>
                 </div>
@@ -102,6 +122,7 @@ import Hero from '@/components/Hero.vue';
         </div>
     </div>
 </section>
+
 <section class="ftco-section bg-light" style="width: 90%; margin: 0 auto; padding: 0;"> <!-- Center the section and make it 90% of the page width -->
     <div class="container-fluid" style="padding: 0;"> <!-- Removed extra width settings -->
         <div class="row justify-content-center"> <!-- Center the row contents -->
@@ -115,34 +136,77 @@ import Hero from '@/components/Hero.vue';
             <div class="col-md-4 d-flex justify-content-center"> <!-- Center the column contents -->
                 <div class="blog-entry" style="width: 90%; text-align: center; color: black;">
     <h1 class="text-center">NOTICE BOARD</h1> <!-- Centered heading -->
-    <div class="text px-0 pt-3 pb-4 text-center"> <!-- Centered text -->
-        <div class="heading text-center">
-            <ReadMore 
-                title="Advertisement for Internship Program - Finance" 
-                :fullText="fullText1" 
-                :charLimit="250" 
-                class="small-text" 
-            />
-            <ReadMore 
-                title="Advertisement for Internship Program - Procurement" 
-                :fullText="fullText1" 
-                :charLimit="250" 
-                class="small-text" 
-            />
-            <ReadMore 
-                title="Procedures For Online Room Booking" 
-                :fullText="fullText1" 
-                :charLimit="250" 
-                class="small-text" 
-            />
-            <ReadMore 
-                title="INSURANCE LETTERS MAY AUGUST 2024 BATCH 4" 
-                :fullText="fullText1" 
-                :charLimit="250" 
-                class="small-text" 
-            />
-        </div>
-    </div>
+    <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">Book a Ticket for Movie <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                    <p class="note-date font-12 text-muted">11 March 2009</p>
+                    <div class="note-content">
+                        <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="mr-1"><i class="fa fa-star favourite-note"></i></span>
+                        <span class="mr-1"><i class="fa fa-trash remove-note"></i></span>
+                        <div class="ml-auto">
+                            <div class="category-selector btn-group">
+                                <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <div class="category">
+                                        <div class="category-business"></div>
+                                        <div class="category-social"></div>
+                                        <div class="category-important"></div>
+                                        <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right category-menu">
+                                    <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
+                                        <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Business
+                                    </a>
+                                    <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
+                                        <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Social
+                                    </a>
+                                    <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
+                                        <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">Book a Ticket for Movie <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                    <p class="note-date font-12 text-muted">11 March 2009</p>
+                    <div class="note-content">
+                        <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="mr-1"><i class="fa fa-star favourite-note"></i></span>
+                        <span class="mr-1"><i class="fa fa-trash remove-note"></i></span>
+                        <div class="ml-auto">
+                            <div class="category-selector btn-group">
+                                <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <div class="category">
+                                        <div class="category-business"></div>
+                                        <div class="category-social"></div>
+                                        <div class="category-important"></div>
+                                        <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right category-menu">
+                                    <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
+                                        <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Business
+                                    </a>
+                                    <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
+                                        <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Social
+                                    </a>
+                                    <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
+                                        <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 </div>
 
 
@@ -191,6 +255,9 @@ import Hero from '@/components/Hero.vue';
 
 </template>
 <style>
+.news{margin-top: -100px;}
+
+
 .read-more {
     position: absolute;
     /* Position the text over the image */
@@ -224,6 +291,7 @@ import Hero from '@/components/Hero.vue';
     color: blue;
     cursor: pointer;
     text-decoration: underline;
+    font-size: 16px;
 }
 .full-width {
     width: 90%;
@@ -240,7 +308,7 @@ import Hero from '@/components/Hero.vue';
 
 .full-width .staff .img {
     width: 90%; /* Ensure the image container is 90% of the parent width */
-    height: 500px; /* Set a height as needed */
+    height: 400px; /* Set a height as needed */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the background image */
 }
@@ -249,10 +317,10 @@ import Hero from '@/components/Hero.vue';
     text-align: center; /* Center text */
 }
 .text {
-    font-size: 1.5rem; /* Increase the font size as needed */
+    font-size: 1rem; /* Increase the font size as needed */
 }
 .text a {
-    font-size: 1.5rem; /* You can adjust this for the link specifically */
+    font-size: 1rem; /* You can adjust this for the link specifically */
     color: #000; /* Change color if necessary */
     text-decoration: none; /* Remove underline if desired */
 }
@@ -266,20 +334,31 @@ import Hero from '@/components/Hero.vue';
     display: flex;
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center contents horizontally */
-    height: 600px; /* Set height for the staff container */
+    height: 400px; /* Set height for the staff container */
 }
 
 .staff .img {
     height: 400px; /* Adjust height for images if needed */
-    width: 100%; /* Full width image */
+    width: 80%; /* Full width image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the background image */
+    align-items: center;
 }
 
 .text {
     text-align: center; /* Center text content */
 }
 
+@media (min-width: 768px) {
+  .text, .heading-section h2, .blog-entry h1, .small-text {
+    font-size: 1.5rem; /* Slightly larger for tablets */
+  }
+}
 
+@media (min-width: 1024px) {
+  .text, .heading-section h2, .blog-entry h1, .small-text {
+    font-size: 1.75rem; /* Larger for desktops */
+  }
+}
 
 </style>

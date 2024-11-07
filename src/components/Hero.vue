@@ -100,7 +100,7 @@
 <style scoped>
 /* Custom styles to reduce the image height */
 .custom-carousel-image {
-  height: 900px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed */
   object-fit: cover; /* Ensures the image scales correctly within the container */
   filter: brightness(50%); /* Makes the image appear dull */
 }
@@ -126,7 +126,7 @@
   font-size: large;
 }
 .custom-carousel-caption p{
-  font-size: 32px;
+  font-size: 22px;
 }
 .custom-carousel-caption h5{
   font-size: 42px;

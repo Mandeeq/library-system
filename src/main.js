@@ -13,6 +13,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 // Import the FontAwesomeIcon component
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+// import './index.css'
 
 // Add the icons to the library
 library.add(faFacebook, faTwitter, faInstagram);

@@ -2,9 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ourphilosophy from '../views/Ourphilosophy.vue'
 import Contact from '../views/Contact.vue'
-import Menu from '@/views/Menu.vue'
-import Chef from '@/views/Chef.vue'
-import Reservation from '@/views/Reservation.vue'
+import Noticeboard from '@/views/Noticeboard.vue'
+import FQAs from '@/views/FQAs.vue'
+import Discipline from '@/views/Discipline.vue'
 import Message from '@/views/Message.vue'
 import News from '@/views/News.vue'
 const router = createRouter({
@@ -30,25 +30,26 @@ const router = createRouter({
       name: 'contact',
       component:Contact,
     },
+   
     {
-      path: '/menu',
-      name: 'Menu',
-      component:Menu,
+      path: '/fqas',
+      name: 'fqas',
+      component:FQAs,
     },
     {
-      path: '/chef',
-      name: 'Chef',
-      component:Chef,
-    },
-    {
-      path: '/reservation',
-      name: 'Reservation',
-      component:Reservation,
+      path: '/discipline',
+      name: 'Discipline',
+      component:Discipline,
     },
     {
       path: '/message',
       name: 'Message',
       component:Message,
+    },
+    {
+      path: '/noticeboard',
+      name: 'Noticeboard',
+      component:Noticeboard,
     },
   ]
 })

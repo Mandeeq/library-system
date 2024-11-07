@@ -18,20 +18,21 @@ import info from '@/components/info.vue';
   });
 </script>
 <template>
- <info />
+
 
 <Navbar />
 <!-- END nav -->
 
 
-  <div class="overlay"></div>
+  <div class="bg-success">
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <div class="col-md-9  text-center mb-5">
         <h1 class="mb-2 bread">Our Philosophy</h1>
-        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>About <i class="fa fa-chevron-right"></i></span></p>
+        <p class="breadcrumbs text-center"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>About <i class="fa fa-chevron-right"></i></span></p>
       </div>
     </div>
+  </div>
   </div>
   <div class="wrapper">
     <div class="sidebar">
@@ -40,7 +41,7 @@ import info from '@/components/info.vue';
         <li><a href="https://www.tum.ac.ke/about/historical-background">Historical background</a></li>
         <li><a href="/ourphilosophy">Our Philosophy</a></li>
         <li><a href="/message">Librarians Message</a></li>
-        <li><a href="#excellence">Excellence</a></li>
+        <li><a href="/discipline">Decipline</a></li>
         <li><a href="#integrity">Integrity</a></li>
         <li><a href="#equity">Equity</a></li>
         <li><a href="#teamwork">Teamwork</a></li>

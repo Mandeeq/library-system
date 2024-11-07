@@ -9,7 +9,7 @@
                 <div>
                     <i class="fas fa-tools" style="color: green;"></i>
                     <span class="resource-library" style="font-size: 32px;">Research Tools</span> <!-- Increased font size to 32px -->
-                    <ul style="list-style-type: none; padding: 0; font-size: 20px;"> <!-- Increased font size to 20px -->
+                    <ul style="list-style-type: none; padding: 0; font-size: 18px;"> <!-- Increased font size to 20px -->
                         <li class="" style="margin-bottom: 10px;">
                             <i class="fas fa-check" style="color: green; margin-right: 5px;"></i>
                             <a href="https://library.tum.ac.ke/site/tools?id=2012074195">Mendeley</a>
@@ -37,8 +37,8 @@
         <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-4">
                 <i class="fas fa-clock" style="color: green; margin-right: 5px;"></i>
-                <span class="resource-library" style="font-size: 22px;">Operational Hours</span> <!-- Increased font size to 22px -->
-                <ul style="list-style-type: none; padding: 0; font-size: 20px;"> <!-- Increased font size to 20px -->
+                <span class="resource-library" style="font-size: 18px;">Operational Hours</span> <!-- Increased font size to 22px -->
+                <ul style="list-style-type: none; padding: 0; font-size: 18px;"> <!-- Increased font size to 20px -->
                     <li style="margin-bottom: 10px;">
                         <i class="fas fa-check" style="color: green; margin-right: 5px;"></i>
                         <a href="javascript:void(0)">Monday to Friday: 8:30AM - 10:00PM</a>
@@ -61,8 +61,8 @@
         <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-4">
                 <i class="fas fa-envelope" style="color: green;"></i>
-                <span class="resource-library" style="font-size: 22px;">Contact Us</span> <!-- Increased font size to 22px -->
-                <ul style="list-style-type: none; padding: 0; font-size: 20px;"> <!-- Increased font size to 20px -->
+                <span class="resource-library" style="font-size: 18px;">Contact Us</span> <!-- Increased font size to 22px -->
+                <ul style="list-style-type: none; padding: 0; font-size: 18px;"> <!-- Increased font size to 20px -->
                     <li class="" style="margin-bottom: 10px;">
                         <i class="fas fa-check" style="color: green; margin-right: 5px;"></i>
                         <i class="fas fa-envelope" style="color: green;"></i>
@@ -102,7 +102,7 @@
 </template>
 <style scoped>
 .footer-text {
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-size: 16px; /* Adjust the font size as needed */
 }
 </style>
 

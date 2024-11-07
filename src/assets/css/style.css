@@ -4,7 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -2081,8 +2081,7 @@ textarea.form-control {
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
   color: #dc3545; }
-  .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before {
-    border-color: #dc3545; }
+ 
 
 .was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before {
   border-color: #e4606d;
@@ -3551,7 +3550,7 @@ input[type="button"].btn-block {
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
-    color:white;
+    color: #6c757d;
     pointer-events: none;
     cursor: default; }
 
@@ -8616,10 +8615,8 @@ h1, h2, h3, h4, h5,
         font-weight: 400;
         font-size: 40px; }
   .hero-wrap .slider-text p {
-    font-size: 40px;
+    font-size: 18px;
     line-height: 1.5;
-    font-family:"PT Serif";
-    align-items: start;
     color: rgba(255, 255, 255, 0.7); }
     .hero-wrap .slider-text p strong {
       font-weight: 700; }
@@ -8645,7 +8642,6 @@ h1, h2, h3, h4, h5,
             color: #e52b34; }
 
 .owl-carousel {
-  display:block;
   position: relative; }
   .owl-carousel .owl-item {
     opacity: 1; }
@@ -8715,7 +8711,7 @@ h1, h2, h3, h4, h5,
           color: #fff;
           line-height: 1;
           font-family: "Dancing Script", cursive;
-          font-size: 5vw;
+          font-size: 10vw;
           font-weight: 400;
           margin-bottom: 40px; }
           .owl-carousel.home-slider .slider-item .slider-text h1 span {
@@ -9110,15 +9106,7 @@ h1, h2, h3, h4, h5,
   transition: all 0.3s ease;
   position: relative;
   z-index: 0; }
-
-  .staff:before {
-    -webkit-transform: skewY(20deg);
-    -ms-transform: skewY(20deg);
-    transform: skewY(20deg); }
-  .staff:after {
-    -webkit-transform: skewY(-20deg);
-    -ms-transform: skewY(-20deg);
-    transform: skewY(-20deg); }
+  
   .staff .img {
     height: 350px;
     background-position: top center; }
@@ -9220,7 +9208,7 @@ h1, h2, h3, h4, h5,
       .blog-entry .meta > div a:hover {
         color: #cccccc; }
   .blog-entry:hover:after {
-    background: green;
+    background: #e52b34;
     height: 15px;
     bottom: -7px; }
 
@@ -9453,7 +9441,7 @@ textarea.form-control {
   z-index: -1; }
 
 .heading-section h2 {
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.3; }
   @media (max-width: 767.98px) {
