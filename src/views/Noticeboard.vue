@@ -545,10 +545,6 @@ $(function() {
 <Footer />
  </template>
  <style>
- body{
-    background: #edf1f5;
-    margin-top:20px;
-}
 .card {
     position: relative;
     display: flex;
