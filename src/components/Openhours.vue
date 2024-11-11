@@ -6,6 +6,7 @@ $(document).ready(function () {
 </script>
 
 <template>
+
     <body>
         <div class="demo-bg">
             <div class="container" style="width: 85%; margin: auto;"> <!-- Container centered and set to 90% width -->
@@ -49,10 +50,13 @@ $(document).ready(function () {
 }
 
 .demo-bg {
-    width: 85%;                /* Set width to 90% */
+    width: 100%;
+    /* Set width to 90% */
     background: #087B3E;
-    margin: 60px auto;         /* Center the demo-bg */
-    padding: 20px;             /* Optional padding for spacing */
+    margin: 60px auto;
+    /* Center the demo-bg */
+    /* padding: 20px; */
+    /* Optional padding for spacing */
 }
 
 .business-hours {

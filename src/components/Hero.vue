@@ -32,87 +32,96 @@
       ></button>
     </div>
 
-    <!-- Inner -->
+    <!-- Inner Carousel Slides -->
     <div class="carousel-inner">
-      <!-- Single item -->
       <div class="carousel-item active">
         <img
           src="/images/tum.jpg"
           class="d-block w-100 custom-carousel-image"
           alt="Sunset Over the City"
         />
-        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+        <div class="carousel-caption-bottom">
           <h5>Empowering Future Innovators</h5>
           <p>Technical University of Mombasa: Where Knowledge Meets Innovation.</p>
         </div>
       </div>
 
-      <!-- Single item -->
       <div class="carousel-item">
         <img
           src="/images/tumlib.jpg"
           class="d-block w-100 custom-carousel-image"
           alt="Canyon at Night"
         />
-        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+        <div class="carousel-caption-bottom">
           <h5>Building Tomorrow's Leaders Today</h5>
           <p>Committed to Academic Excellence and Professional Development</p>
         </div>
       </div>
 
-      <!-- Single item -->
       <div class="carousel-item">
         <img
           src="/images/lib2.jpg"
           class="d-block w-100 custom-carousel-image"
           alt="Cliff Above a Stormy Sea"
         />
-        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+        <div class="carousel-caption-bottom">
           <h5>Your Journey to Excellence Begins Here</h5>
           <p>Fostering Skills and Competencies for a Dynamic World</p>
         </div>
       </div>
     </div>
-    <!-- Inner -->
-
-    <!-- Controls -->
-   
   </div>
 </template>
 
 <style scoped>
-/* Custom styles to reduce the image height */
+/* Responsive image styling */
 .custom-carousel-image {
-  height: 600px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensures the image scales correctly within the container */
-  filter: brightness(50%); /* Makes the image appear dull */
+  width: 100%;
+  height: 60vh; /* Sets the height to a responsive viewport height */
+  object-fit: cover; /* Scales image to fit within its container */
+  filter: brightness(90%); /* Adds a dark overlay for better text contrast */
 }
 
-/* Custom styles for the caption text */
-.custom-carousel-caption {
-  color: white !important; /* Sets the text color to white */
-
-}
-.carousel-caption.custom-carousel-caption h5,
-.carousel-caption.custom-carousel-caption p {
-  color: white !important; /* Ensure both h5 and p are targeted */
-}
-.custom-carousel-caption {
-  position: absolute; /* Positioning the caption absolutely */
-  top: 50%; /* Move the caption to the center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to center both horizontally and vertically */
-  color: white !important; /* Set the text color to white */
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-  padding: 10px; /* Add padding for better readability */
-  text-align: center; /* Center text */
-  font-size: large;
-}
-.custom-carousel-caption p{
-  font-size: 22px;
-}
-.custom-carousel-caption h5{
-  font-size: 42px;
+/* Bottom caption styling */
+.carousel-caption-bottom {
+  position: absolute;
+  bottom: 10%; /* Positions caption at the bottom of the carousel */
+  width: 100%; /* Makes the caption span the full width */
+  background-color: rgba(3, 3, 3, 0.5); /* Semi-transparent white background */
+  color: white; /* Black text for contrast on white background */
+  padding: 15px;
+  text-align: center;
 }
 
+.carousel-caption-bottom h5 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-caption-bottom p {
+  font-size: 1.3rem;
+  margin: 0;
+  color: aliceblue;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  .carousel-caption-bottom h5 {
+    font-size: 1.3rem;
+  }
+  .carousel-caption-bottom p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Adjust the carousel height for larger screens */
+  .custom-carousel-image {
+    height: 75vh; /* Increased height for larger displays */
+  }
+}
 </style>
