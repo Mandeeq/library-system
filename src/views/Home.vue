@@ -16,8 +16,8 @@ import Openhours from '@/components/Openhours.vue';
     <Hero />
     <Openhours />
     
-    <section class="ftco-section bg-light full-width-section move-up">
-    <div class="container-fluid">
+    <section class="ftco-section p-5 mt-5 ebooks">
+    <div class="container-fluid ">
         <div class="row justify-content-center">
             <div class="col-md-7 text-center heading-section">
                 <h2 class="news">E-BOOKS</h2>
@@ -28,19 +28,24 @@ import Openhours from '@/components/Openhours.vue';
                 <div class="card grey-card text-center">
                     <div class="img" style="background-image: url(/images/bookboon.jpg);"></div>
                     <div class="text px-4 pt-2">
-                        <a href="http://bookboon.com/" target="_blank">
+                        <p>
                             Bookboon offers a vast selection of free and premium eBooks
-                        </a>
+
+                        </p>
+                    
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center ">
                 <div class="card grey-card text-center">
                     <div class="img" style="background-image: url(/images/Ebrary.jpg);"></div>
                     <div class="text px-4 pt-2">
-                        <a href="https://tum.remotexs.co/user" target="_blank">
-                          Ebrary library provides access to thousands of academic eBooks
-                        </a>
+                        <p>
+                            Ebrary library provides access to thousands of academic eBooks
+                        </p>
+                        <!-- <a href="https://tum.remotexs.co/user" target="_blank">
+                        
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -48,9 +53,9 @@ import Openhours from '@/components/Openhours.vue';
                 <div class="card grey-card text-center">
                     <div class="img" style="background-image: url(/images/Britanicca.jpg);"></div>
                     <div class="text px-4 pt-2">
-                        <a href="https://tum.remotexs.co/user" target="_blank">
-                            University of Mombasa Library Hosts Reading for Success Campaign
-                        </a>
+                        <p>University of Mombasa Library Hosts Reading for Success Campaign</p>
+                        <!-- <a href="https://tum.remotexs.co/user" target="_blank">
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -58,9 +63,10 @@ import Openhours from '@/components/Openhours.vue';
                 <div class="card grey-card text-center">
                     <div class="img" style="background-image: url(/images/scholarText.jpg);"></div>
                     <div class="text px-4 pt-2">
-                        <a href="https://example.com/resource4" target="_blank">
-                            Search for Common Ground signs MOU with TUM for promoting peace in digital space
-                        </a>
+                        <p>  Search for Common Ground signs MOU with TUM for promoting peace in digital space</p>
+                        <!-- <a href="https://example.com/resource4" target="_blank">
+                          
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -71,7 +77,7 @@ import Openhours from '@/components/Openhours.vue';
 
 
 
-<section class="ftco-section bg-light full-width-section move-up">
+<section class="ftco-section p-5 mt-5 ebooks">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-7 text-center heading-section">
@@ -219,7 +225,12 @@ import Openhours from '@/components/Openhours.vue';
 
 
 </template>
+
 <style>
+.ebooks{
+    background-color: #EEEEEE;
+}
+
 .grey-card {
     background-color: #f0f0f0; /* Light grey background */
     padding: 20px;
@@ -279,7 +290,6 @@ import Openhours from '@/components/Openhours.vue';
 }
 
 .text a {
-    color: #333; /* Text color */
     text-decoration: none;
     font-weight: bold;
 }
