@@ -1,29 +1,27 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
-
 </script>
+
 <template>
-    
-<body>
-
-	<Navbar />
-	<!-- END nav -->
-	
-	
-		<div class="overlay"></div>
+  <body>
+    <Navbar />
+   
 		<div class="container">
-			<div class="row no-gutters slider-text align-items-end justify-content-center">
-				<div class="col-md-9 text-center mb-5">
-					<h1 class="mb-2 bread">FQAs</h1>
-					<p class="breadcrumbs text-center"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>FQAs<i class="fa fa-chevron-right"></i></span></p>
-				</div>
-			</div>
-		</div>
+			
+      <div class="  text-center ">
+        <h1 class="mb-2 bread">Discipline</h1>
+        <p class="breadcrumbs text-center"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>Discipline <i class="fa fa-chevron-right"></i></span></p>
+      </div>
+    </div>
+    <!-- Main Container -->
+    <div class=" my-5 " style="width: 80%; margin: 0 auto;">
+      <!-- Page Header -->
+     
 
-
-	<!-- FAQ 3 - Bootstrap Brain Component -->
-<section class="bsb-faq-3 py-3 py-md-5 py-xl-8">
+      <!-- FAQ Intro -->
+     <!-- FAQ 3 - Bootstrap Brain Component -->
+<section class="bsb-faq-3 py-0 py-md-5 py-xl-8" style="max-width: 100%;">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -47,7 +45,7 @@ import Footer from '@/components/Footer.vue';
         </div>
         <div class="col-11 col-xl-10">
           <div class="accordion accordion-flush" id="faqAccount">
-            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+            <div class="accordion-item bg-transparent border-top border-bottom py-0">
               <h2 class="accordion-header" id="faqAccountHeading1">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1" aria-expanded="false" aria-controls="faqAccountCollapse1">
                   What is an account?
@@ -59,7 +57,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqAccountHeading2">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2" aria-expanded="false" aria-controls="faqAccountCollapse2">
                   How do I create an account?
@@ -71,7 +69,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqAccountHeading3">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3" aria-expanded="false" aria-controls="faqAccountCollapse3">
                   How do I secure my account?
@@ -83,7 +81,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqAccountHeading4">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse4" aria-expanded="false" aria-controls="faqAccountCollapse4">
                   What should I do if I forget my password?
@@ -95,7 +93,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqAccountHeading5">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse5" aria-expanded="false" aria-controls="faqAccountCollapse5">
                   What should I do if my account is compromised or hacked?
@@ -125,7 +123,7 @@ import Footer from '@/components/Footer.vue';
         </div>
         <div class="col-11 col-xl-10">
           <div class="accordion accordion-flush" id="faqOrder">
-            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+            <div class="accordion-item bg-transparent border-top border-bottom py-0">
               <h2 class="accordion-header" id="faqOrderHeading1">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse1" aria-expanded="false" aria-controls="faqOrderCollapse1">
                   Do I need to create an account to place an order?
@@ -137,7 +135,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqOrderHeading2">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse2" aria-expanded="false" aria-controls="faqOrderCollapse2">
                   Can I change or cancel my order after it's been placed?
@@ -149,7 +147,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqOrderHeading3">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse3" aria-expanded="false" aria-controls="faqOrderCollapse3">
                   What payment methods do you accept?
@@ -161,7 +159,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqOrderHeading4">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse4" aria-expanded="false" aria-controls="faqOrderCollapse4">
                   Is my payment information secure?
@@ -173,7 +171,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqOrderHeading5">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse5" aria-expanded="false" aria-controls="faqOrderCollapse5">
                   How do I track the status of my order?
@@ -203,7 +201,7 @@ import Footer from '@/components/Footer.vue';
         </div>
         <div class="col-11 col-xl-10">
           <div class="accordion accordion-flush" id="faqRefund">
-            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+            <div class="accordion-item bg-transparent border-top border-bottom py-0">
               <h2 class="accordion-header" id="faqRefundHeading1">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse1" aria-expanded="false" aria-controls="faqRefundCollapse1">
                   How do I request a refund or exchange?
@@ -220,7 +218,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqRefundHeading2">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse2" aria-expanded="false" aria-controls="faqRefundCollapse2">
                   What items are eligible for a refund or exchange?
@@ -236,7 +234,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqRefundHeading3">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse3" aria-expanded="false" aria-controls="faqRefundCollapse3">
                   What if I receive a damaged or defective item?
@@ -248,7 +246,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqRefundHeading4">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse4" aria-expanded="false" aria-controls="faqRefundCollapse4">
                   Who covers the shipping costs for exchanges?
@@ -260,7 +258,7 @@ import Footer from '@/components/Footer.vue';
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-transparent border-bottom py-3">
+            <div class="accordion-item bg-transparent border-bottom py-0">
               <h2 class="accordion-header" id="faqRefundHeading5">
                 <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse5" aria-expanded="false" aria-controls="faqRefundCollapse5">
                   Can I change my mind and cancel my refund or exchange request?
@@ -279,14 +277,7 @@ import Footer from '@/components/Footer.vue';
   </div>
 
 </section>
-<Footer />
-			
-
-			<!-- loader -->
-			<!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
-
-
-			
-			
-		</body>
+    </div>
+    <Footer />
+  </body>
 </template>

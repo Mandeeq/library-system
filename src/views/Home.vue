@@ -15,130 +15,149 @@ import Openhours from '@/components/Openhours.vue';
     <Navbar />
     <Hero />
     <Openhours />
-    
     <section class="ftco-section p-5 mt-5 ebooks">
-    <div class="container-fluid ">
-        <div class="row justify-content-center">
-            <div class="col-md-7 text-center heading-section">
-                <h2 class="news">E-BOOKS</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center"> <!-- Center all items in the row -->
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card grey-card text-center">
-                    <div class="img" style="background-image: url(/images/bookboon.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <p>
-                            Bookboon offers a vast selection of free and premium eBooks
-
-                        </p>
-                    
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center ">
-                <div class="card grey-card text-center">
-                    <div class="img" style="background-image: url(/images/Ebrary.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <p>
-                            Ebrary library provides access to thousands of academic eBooks
-                        </p>
-                        <!-- <a href="https://tum.remotexs.co/user" target="_blank">
-                        
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card grey-card text-center">
-                    <div class="img" style="background-image: url(/images/Britanicca.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <p>University of Mombasa Library Hosts Reading for Success Campaign</p>
-                        <!-- <a href="https://tum.remotexs.co/user" target="_blank">
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card grey-card text-center">
-                    <div class="img" style="background-image: url(/images/scholarText.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <p>  Search for Common Ground signs MOU with TUM for promoting peace in digital space</p>
-                        <!-- <a href="https://example.com/resource4" target="_blank">
-                          
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container-fluid">
+    <!-- Section Heading -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-12 text-center">
+        <h2 class="news mt-0 text-primary">E-BOOKS</h2>
+      </div>
     </div>
+
+    <!-- Cards Section -->
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+        <div class="card shadow-sm" style="width: 100%; height: 100%; border-radius: 8px;">
+          <div
+            class="img"
+            style="background-image: url(/images/bookboon.jpg); background-size: cover; background-position: center; height: 200px;"
+          ></div>
+          <div class="card-body">
+            <p class="fs-6 text-muted">
+              Bookboon offers a vast selection of free and premium eBooks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+        <div class="card shadow-sm" style="width: 100%; height: 100%; border-radius: 8px;">
+          <div
+            class="img"
+            style="background-image: url(/images/Ebrary.jpg); background-size: cover; background-position: center; height: 200px;"
+          ></div>
+          <div class="card-body">
+            <p class="fs-6 text-muted">
+              Ebrary library provides access to thousands of academic eBooks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+        <div class="card shadow-sm" style="width: 100%; height: 100%; border-radius: 8px;">
+          <div
+            class="img"
+            style="background-image: url(/images/Britanicca.jpg); background-size: cover; background-position: center; height: 200px;"
+          ></div>
+          <div class="card-body">
+            <p class="fs-6 text-muted">
+              University of Mombasa Library Hosts Reading for Success Campaign.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+        <div class="card shadow-sm" style="width: 100%; height: 100%; border-radius: 8px;">
+          <div
+            class="img"
+            style="background-image: url(/images/scholarText.jpg); background-size: cover; background-position: center; height: 200px;"
+          ></div>
+          <div class="card-body">
+            <p class="fs-6 text-muted">
+              Search for Common Ground signs MOU with TUM for promoting peace in digital space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 
 
 <section class="ftco-section p-5 mt-5 ebooks">
     <div class="container-fluid">
+        <!-- Section Heading -->
         <div class="row justify-content-center">
             <div class="col-md-7 text-center heading-section">
-                <h2 class="news mt-50">Latest News</h2>
+                <h2 class="news mt-0 mb-5 text-primary">LATEST NEWS</h2>
             </div>
         </div>
-        <div class="row justify-content-center"> <!-- Center all items in the row -->
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="grey-card text-center">
-                    <div class="img" style="background-image: url(/images/lib4.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <ReadMore title="University of Mombasa Digital Library Expands Access to Global Resources"
-                            :fullText="'On 31st October, Professor Erin Wilson from the University of Groningen, Netherlands, visited TUM, where she delivered a public lecture alongside representatives from both universities on the theme of “Religion, Politics, and Human Rights in the Contemporary World.” ...'" 
-                            :charLimit="250" />
+
+        <!-- News Cards Section -->
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card shadow-sm text-center border-0" style="width: 100%; border-radius: 8px;">
+                    <div class="img" style="background-image: url(/images/lib4.jpg); background-size: cover; background-position: center; height: 200px;"></div>
+                    <div class="card-body">
+                        <p class="fs-6 text-muted">University of Mombasa Digital Library Expands Access to Global Resources</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="grey-card text-center">
-                    <div class="img" style="background-image: url(/images/lib3.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <ReadMore title="Upcoming Workshops on Using E-Resources"
-                            :fullText="fullText" 
-                            :charLimit="250" />
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card shadow-sm text-center border-0" style="width: 100%; border-radius: 8px;">
+                    <div class="img" style="background-image: url(/images/lib3.jpg); background-size: cover; background-position: center; height: 200px;"></div>
+                    <div class="card-body">
+                        <p class="fs-6 text-muted">Upcoming Workshops on Using E-Resources</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="grey-card text-center">
-                    <div class="img" style="background-image: url(/images/tum13.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <ReadMore title="University of Mombasa Library Hosts Reading for Success Campaign"
-                            :fullText="fullText1" 
-                            :charLimit="250" />
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card shadow-sm text-center border-0" style="width: 100%; border-radius: 8px;">
+                    <div class="img" style="background-image: url(/images/tum13.jpg); background-size: cover; background-position: center; height: 200px;"></div>
+                    <div class="card-body">
+                        <p class="fs-6 text-muted">University of Mombasa Library Hosts Reading for Success Campaign</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="grey-card text-center">
-                    <div class="img" style="background-image: url(/images/tum14.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <ReadMore title="Search for Common Ground sign MOU with TUM for promoting peace in digital space"
-                            :fullText="fullText2" 
-                            :charLimit="250" />
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card shadow-sm text-center border-0" style="width: 100%; border-radius: 8px;">
+                    <div class="img" style="background-image: url(/images/tum14.jpg); background-size: cover; background-position: center; height: 200px;"></div>
+                    <div class="card-body">
+                        <p class="fs-6 text-muted">Search for Common Ground Signs MOU with TUM for Promoting Peace in Digital Space</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="" style="width: 94%; margin: auto; padding: 0; display: flex; justify-content: center;">
-    <div class="" style="width: 94%; text-align: center; color: black;">
+
+<section class="ebooks p-5 mt-5" style="width: 100%; margin: auto; padding: 0; display: flex; justify-content: center;">
+    <div class="" style="width: 97%; text-align: center; color: black;">
         <h1 class="text-center">NOTICE BOARD</h1> <!-- Centered heading -->
 
         <!-- First Card -->
         <div class="card card-body" style="margin-bottom: 20px;">
             <span class="side-stick"></span>
             <h5 class="note-title text-truncate w-100 mb-0" data-noteheading="Book a Ticket for Movie">
-                Book a Ticket for Movie <i class="point fa fa-circle ml-1 font-10"></i>
+                Book a Ticket for Movie 
             </h5>
-            <p class="note-date font-12 text-muted">11 March 2009</p>
+            <p class="note-date font-12 text-muted">11 November 2024</p>
             <div class="note-content">
                 <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
                     Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.
@@ -146,25 +165,11 @@ import Openhours from '@/components/Openhours.vue';
             </div>
             <div class="d-flex align-items-center justify-content-center">
                 <span class="mr-1"><i class="fa fa-star favourite-note"></i></span>
-                <span class="mr-1"><i class="fa fa-trash remove-note"></i></span>
+               
                 <div class="ml-auto">
                     <div class="category-selector btn-group">
-                        <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
-                            <div class="category">
-                                <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right category-menu">
-                            <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
-                                <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Business
-                            </a>
-                            <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
-                                <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Social
-                            </a>
-                            <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
-                                <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
-                            </a>
-                        </div>
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -174,9 +179,9 @@ import Openhours from '@/components/Openhours.vue';
         <div class="card card-body" style="margin-bottom: 20px;">
             <span class="side-stick"></span>
             <h5 class="note-title text-truncate w-100 mb-0" data-noteheading="Book a Ticket for Movie">
-                Book a Ticket for Movie <i class="point fa fa-circle ml-1 font-10"></i>
+                Book a Ticket for Movie 
             </h5>
-            <p class="note-date font-12 text-muted">11 March 2009</p>
+            <p class="note-date font-12 text-muted">11 November 2024</p>
             <div class="note-content">
                 <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
                     Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.
@@ -184,25 +189,12 @@ import Openhours from '@/components/Openhours.vue';
             </div>
             <div class="d-flex align-items-center justify-content-center">
                 <span class="mr-1"><i class="fa fa-star favourite-note"></i></span>
-                <span class="mr-1"><i class="fa fa-trash remove-note"></i></span>
+                
                 <div class="ml-auto">
                     <div class="category-selector btn-group">
-                        <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
-                            <div class="category">
-                                <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right category-menu">
-                            <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
-                                <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Business
-                            </a>
-                            <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
-                                <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Social
-                            </a>
-                            <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
-                                <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
-                            </a>
-                        </div>
+                        
+                       
+                        
                     </div>
                 </div>
             </div>
@@ -231,15 +223,7 @@ import Openhours from '@/components/Openhours.vue';
     background-color: #EEEEEE;
 }
 
-.grey-card {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.2); /* Soft grey shadow */
-    transition: transform 0.3s ease-in-out;
-    width: 90%;
-    margin-bottom: 20px;
-}
+
 
 .grey-card:hover {
     transform: translateY(-5px); /* Lift effect on hover */
