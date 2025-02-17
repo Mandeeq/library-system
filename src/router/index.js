@@ -8,6 +8,7 @@ import Discipline from '@/views/Discipline.vue'
 import Message from '@/views/Message.vue'
 import News from '@/views/News.vue'
 import Gallery from '@/views/Gallery.vue'
+import Downloads from '@/views/downloads.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -52,6 +53,11 @@ const router = createRouter({
       path: '/noticeboard',
       name: 'Noticeboard',
       component:Noticeboard,
+    },
+    {
+      path: '/downloads',
+      name: 'Downloads',
+      component:Downloads,
     },
   ]
 })

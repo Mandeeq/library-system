@@ -1,262 +1,98 @@
 <script setup>
-import Navbar from '@/components/Navbar.vue';
-import Footer from '@/components/Footer.vue';
+import { reactive } from "vue";
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
+// vue-easy-lightbox, for more info and examples you can check out https://onycat.com/vue-easy-lightbox/
+import VueEasyLightbox from "vue-easy-lightbox";
 
+// Reactive gallery state
+const gallery = reactive({
+  visible: false,
+  index: 0,
+  photos: [
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image1.jpg",
+  ],
+});
+
+// Helper function to show a photo
+function showPhoto(index) {
+  gallery.index = index;
+  gallery.visible = true;
+}
+
+// Helper function to hide the lightbox
+function handleHide() {
+  gallery.visible = false;
+}
 </script>
+
 <template>
-    <Navbar />
-    <div class="bg-success">
-  <div class="container">
-    <div class="row no-gutters slider-text align-items-end justify-content-center">
-      <div class="col-md-9  text-center mb-5">
-        <h1 class="mb-2 bread">Our Gallery</h1>
-        <p class="breadcrumbs text-center"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>Gallery<i class="fa fa-chevron-right"></i></span></p>
-      </div>
-    </div>
-  </div>
-  </div>
+  <!-- Hero -->
+  <Navbar />
 
-<div
-  id="carouselMultiItemExample"
-  data-mdb-carousel-init class="carousel slide carousel-dark text-center"
-  data-mdb-ride="carousel"
->
-  <!-- Controls -->
- <div class="d-flex justify-content-between align-items-center mb-4">
-  <!-- Previous Button -->
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-mdb-target="#carouselMultiItemExample"
-    data-mdb-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-
-  <!-- Next Button -->
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-mdb-target="#carouselMultiItemExample"
-    data-mdb-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-             
-                src="/images/image1.jpg"
-                class="card-img-top"
-                alt="Waterfall"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-  src="/images/image2.jpg"
-  class="card-img-top img-fluid img-thumbnail"
-  alt="Sunset Over the Sea"
-  style="height: 230px; "
-/>
-
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-              src="/images/image3.jpg"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="card">
-              <img
-              src="/images/image4.jpg"
-                class="card-img-top"
-                alt="Fissure in Sandstone"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-              src="/images/image4.jpg"
-                class="card-img-top"
-                alt="Storm Clouds"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-              src="/images/image8.jpg"
-                class="card-img-top"
-                alt="Storm Clouds"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div class="card">
-              <img
-              src="/images/image9.jpg"
-                class="card-img-top"
-                alt="Storm Clouds"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-            <div class="card">
-              <img
-              src="/images/image10.jpg"
-                class="card-img-top"
-                alt="Storm Clouds"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-            <div class="card">
-              <img
-              src="/images/image11.jpg"
-                class="card-img-top"
-                alt="Storm Clouds"
-                style="height: 230px; "
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" data-mdb-ripple-init class="btn btn-success">VIEW MORE</a>
-              </div>
-            </div>
-          </div>
+  <div class="bg-success">
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end justify-content-center">
+        <div class="col-md-9  text-center mb-5">
+          <h1 class="mb-2 bread">Our Gallery</h1>
+          <p class="breadcrumbs text-center"><span class="mr-2"><a href="/">Home <i
+                  class="fa fa-chevron-right"></i></a></span> <span>Gallery<i class="fa fa-chevron-right"></i></span>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <!-- Inner -->
-</div>
-<!-- Carousel wrapper -->
-<Footer />
+
+
+  <BasePageHeading title="Gallery" subtitle="Clean and easy way to showcase your images.">
+    <template #extra>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-alt">
+          <li class="breadcrumb-item">
+            <a class="link-fx" href="javascript:void(0)">Plugins</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">Gallery</li>
+        </ol>
+      </nav>
+    </template>
+  </BasePageHeading>
+  <!-- END Hero -->
+
+  <!-- Page Content -->
+  <div class="content overflow-hidden">
+    <div class="container-fluid">
+      <div class="row items-push">
+        <div v-for="(photo, index) in gallery.photos" :key="index" class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <a href="javascript:void(0)" class="img-link img-link-zoom-in img-thumb img-lightbox"
+            @click="showPhoto(index)">
+            <img class="img-fluid" :src="photo" alt="Photo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <VueEasyLightbox :visible="gallery.visible" :index="gallery.index" :imgs="gallery.photos" @hide="handleHide" />
+  </div>
+  <!-- END Page Content -->
+  <Footer />
 </template>
-<style>
-.container{
-    width:90%;
-    max-width: 90%;
 
+<style scoped>
+/* Prevent horizontal scrolling */
+body,
+.content {
+  overflow-x: hidden;
 }
-.carousel-control-prev-icon:after{
-  content: "";
-}
-.carousel-control-next-icon:after{
-  content: "";
+
+/* Ensure images are responsive and stay within the container */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 </style>

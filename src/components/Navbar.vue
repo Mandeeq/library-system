@@ -1,20 +1,21 @@
 <script setup>
 import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute();
+
 /**
- * Computed function to check if the current path is active.
- * Uses window.location.pathname to match against the link path.
+ * Function to check if the current route matches the given path
  */
-const isActive = (path) => {
-    return computed(() => window.location.pathname === path)
-}
+const isActive = (path) => computed(() => route.path.startsWith(path));
 </script>
+
 <template>
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #D99837;">
         <!-- Logo on the left -->
         <a class="navbar-brand logo px-4 ms-5" href="#">
-    <img src="/img/logot.png" alt="logo" class="logo-image" style="width: 60px;">
-</a>
-
+            <img src="/img/logot.png" alt="logo" class="logo-image" style="width: 60px;">
+        </a>
 
         <!-- Toggler for mobile view -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -24,46 +25,53 @@ const isActive = (path) => {
 
         <!-- Navbar links container -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav px-5 ">
-                <li class=" ">
-                    <a class="nav-link text-white pill-hover" href="/" style="font-size: 1rem;">HOME</a>
+            <ul class="navbar-nav px-5">
+                <li class="nav-item">
+                    <router-link to="/" class="nav-link text-white pill-hover" active-class="active-link">
+                        HOME
+                    </router-link>
                 </li>
-                <li class=" dropdown">
-                    <a class="nav-link dropdown-toggle text-white pill-hover" href="/about" id="navbarDropdown"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        style="font-size: 1rem;">
+                <li class="nav-item dropdown"
+                    :class="{ 'active-link': isActive('/message').value || isActive('/discipline').value }">
+                    <a class="nav-link dropdown-toggle text-white pill-hover" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         ABOUT US
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                       
-                        <a class="dropdown-item" href="/message" style="font-size: 0.9rem;">University Librarian's
-                            Message</a>
-                        <a class="dropdown-item" href="/discipline" style="font-size: 0.9rem;">Discipline</a>
+                        <router-link to="/message" class="dropdown-item">University Librarian's Message</router-link>
+                        <router-link to="/discipline" class="dropdown-item">Discipline</router-link>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white pill-hover" href="/noticeboard" style="font-size: 1rem;">ANNOUNCEMENTS</a>
+                    <router-link to="/noticeboard" class="nav-link text-white pill-hover" active-class="active-link">
+                        ANNOUNCEMENTS
+                    </router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white pill-hover" href="/gallery" style="font-size: 1rem;">GALLERY</a>
+                    <router-link to="/gallery" class="nav-link text-white pill-hover" active-class="active-link">
+                        GALLERY
+                    </router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white pill-hover" href="faqs" style="font-size: 1rem;">FAQS</a>
+                    <router-link to="/faqs" class="nav-link text-white pill-hover" active-class="active-link">
+                        FAQS
+                    </router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white pill-hover" href="/" style="font-size: 1rem;">DOWNLOADS</a>
+                    <router-link to="/downloads" class="nav-link text-white pill-hover" active-class="active-link">
+                        DOWNLOADS
+                    </router-link>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white pill-hover" href="/about" id="navbarDropdown"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        style="font-size: 1rem;">
+                <li class="nav-item dropdown" :class="{ 'active-link': isActive('/Ourphilosophy').value }">
+                    <a class="nav-link dropdown-toggle text-white pill-hover" href="#" id="navbarDropdownExamBank"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         EXAM BANK
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Ourphilosophy" style="font-size: 0.9rem;">Our Philosophy</a>
-                        <a class="dropdown-item" href="/" style="font-size: 0.9rem;">Historical Background</a>
-                        <a class="dropdown-item" href="/" style="font-size: 0.9rem;">Governance Structure</a>
-                        <a class="dropdown-item" href="/" style="font-size: 0.9rem;">Council Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownExamBank">
+                        <router-link to="/Ourphilosophy" class="dropdown-item">Our Philosophy</router-link>
+                        <router-link to="/" class="dropdown-item">Historical Background</router-link>
+                        <router-link to="/" class="dropdown-item">Governance Structure</router-link>
+                        <router-link to="/" class="dropdown-item">Council Members</router-link>
                     </div>
                 </li>
             </ul>
@@ -72,13 +80,13 @@ const isActive = (path) => {
 </template>
 
 <style scoped>
-/* Navbar logo styling */
-.logo-image {
-    width: 60px;
+/* Active link styling */
+.active-link {
+    background-color: #087B3E !important;
+    color: white !important;
+    border-radius: 20px;
+    font-weight: bolder;
 }
-
-
-
 
 /* Link hover and pill style */
 .pill-hover {
